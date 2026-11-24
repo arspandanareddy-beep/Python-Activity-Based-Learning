@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python ABL Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            background: #24292e;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Python Activity Based Learning</h1>
+    <h3>B.Tech First Year - Python Programming</h3>
+    <p>My 10 Python Case Studies</p>
+
+    <div id="projects"></div>
+
+    <script>
+        const projects = [
+            "Student Timetable Conflict Detection",
+            "Student Marks Analysis",
+            "Case Study 3",
+            "Case Study 4",
+            "Case Study 5",
+            "Case Study 6",
+            "Case Study 7",
+            "Case Study 8",
+            "Case Study 9",
+            "Case Study 10"
+        ];
+
+        const container = document.getElementById("projects");
+
+        projects.forEach((project, index) => {
+            const number = index + 1;
+
+            container.innerHTML += `
+                <div class="project">
+                    <h2>Case Study ${number}</h2>
+                    <p>${project}</p>
+                    <a href="./Case-Study-${number}/">
+                        View Project
+                    </a>
+                </div>
+            `;
+        });
+    </script>
+
+</body>
+</html>
