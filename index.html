@@ -1,20 +1,18 @@
 
+
+
+            
 <!DOCTYPE html>
 <html>
 <head>
     <title>Python ABL Projects</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             background: #f2f4f8;
             text-align: center;
             padding: 20px;
         }
-
-        h1 {
-            color: #222;
-        }
-
         .project {
             background: white;
             padding: 20px;
@@ -22,9 +20,7 @@
             max-width: 500px;
             border-radius: 10px;
         }
-
         a {
-            display: inline-block;
             background: #24292e;
             color: white;
             padding: 10px 20px;
@@ -33,45 +29,63 @@
         }
     </style>
 </head>
-
 <body>
 
-    <h1>Python Activity Based Learning</h1>
-    <h3>B.Tech First Year - Python Programming</h3>
-    <p>My 10 Python Case Studies</p>
+<h1>Python Activity Based Learning</h1>
+<h3>B.Tech First Year - Python Programming</h3>
+<p>My 10 Python Case Studies</p>
 
-    <div id="projects"></div>
+<div class="project">
+<h2>Case Study 1</h2>
+<p>Student Timetable Conflict Detection</p>
+<a href="./Case-Study-01/">View Project</a>
+</div>
 
-    <script>
-        const projects = [
-            "Student Timetable Conflict Detection",
-            "Student Marks Analysis",
-            "Case Study 3",
-            "Case Study 4",
-            "Case Study 5",
-            "Case Study 6",
-            "Case Study 7",
-            "Case Study 8",
-            "Case Study 9",
-            "Case Study 10"
-        ];
+<div class="project">
+<h2>Case Study 2</h2>
+<p>Student Marks Analysis</p>
+<a href="./Case-Study-02/">View Project</a>
+</div>
 
-        const container = document.getElementById("projects");
+<div class="project">
+<h2>Case Study 3</h2>
+<a href="./Case-Study-03/">View Project</a>
+</div>
 
-        projects.forEach((project, index) => {
-            const number = index + 1;
+<div class="project">
+<h2>Case Study 4</h2>
+<a href="./Case-Study-04/">View Project</a>
+</div>
 
-            container.innerHTML += `
-                <div class="project">
-                    <h2>Case Study ${number}</h2>
-                    <p>${project}</p>
-                    <a href="./Case-Study-${number}/">
-                        View Project
-                    </a>
-                </div>
-            `;
-        });
-    </script>
+<div class="project">
+<h2>Case Study 5</h2>
+<a href="./Case-Study-05/">View Project</a>
+</div>
+
+<div class="project">
+<h2>Case Study 6</h2>
+<a href="./Case-Study-06/">View Project</a>
+</div>
+
+<div class="project">
+<h2>Case Study 7</h2>
+<a href="./Case-Study-07/">View Project</a>
+</div>
+
+<div class="project">
+<h2>Case Study 8</h2>
+<a href="./Case-Study-08/">View Project</a>
+</div>
+
+<div class="project">
+<h2>Case Study 9</h2>
+<a href="./Case-Study-09/">View Project</a>
+</div>
+
+<div class="project">
+<h2>Case Study 10</h2>
+<a href="./Case-Study-10/">View Project</a>
+</div>
 
 </body>
 </html>
